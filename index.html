@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Jeff Dean Profile" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://j-j-dean.github.io/myprofile/." />
+    <meta property="og:description" content="Website providing additional background information." />
+    <meta property="og:image" content="https://j-j-dean.github.io/myprofile/profile-pic.jpg" />
+    <title>Jeff Dean Profile</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./site.js"></script>
+    <link rel="stylesheet" href="./site.css" asp-append-version="true" />
+</head>
+
+<body class="font-times">
+
+  <div id="myMenu" class="mymenu">
+    <a href='#' class="h3 text-primary closebtn" onclick="home.closeMyMenu()">X</a>
+    <ul>
+      <a class="h3 text-primary" href="./index.html" id="Home">Home</a>
+      <a class="h3 text-primary" href="./experience.html" id="Experience">Experience</a>
+      <a class="h3 text-primary" href="./education.html" id="Education">Education</a>
+      <a class="h3 text-primary" href="./skills.html" id="Skills">Skills</a>
+      <a class="h3 text-primary" href="./projects.html" id="Projects">Projects</a>
+      <a class="h3 text-primary" href="./about.html" id="About">About</a>
+    <ul>
+  </div>
+
+  <section id="myNavBar" class="my-navbar transparent bg-gainsboro-white">
+    <div class="container-fluid">
+      <div>
+        <p class="my-name text-primary text-4vw-size">Jeffrey Dean</p>
+        <p class="my-job-type text-black text-2vw-size">Software Application Developer</p>
+      </div>
+      <div id="myNavBarButton">
+        <button type="button" class="h3" onclick="home.openMyMenu()">☰</button>
+      </div>
+    <div>
+  </section>
+
+  <section id="home-main">
+    <div id="home-image" class="skip-nav-bar">
+      <img id="home-background-image" src="./Montana.jpg" alt="Montana"/>
+    </div>
+
+    <section id="home-problem">
+      <div id="home-problem-text">
+        <p class="text-white">problem</p>
+      </div>
+      <div id="home-problem-block">
+        <div id="home-problem-grid">
+          <div></div>
+          <div class="home-container">
+            <p class="text-white text-vertical-center text-pad-right">
+                Obstacles demand your attention.  You need someone to identify and 
+                create critical, time-sensitive solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="home-solution">
+      <div id="home-solution-text">
+        <p class="text-white">solution</p>
+      </div>
+      <div id="home-solution-block">
+        <div id="home-solution-grid">
+          <div class="home-container">
+            <p class="text-white text-vertical-center">
+                You require high-end talent to meet the company's needs.  
+                I bring sound decision making to provide the best technical 
+                services for every client.
+            </p>
+          </div>
+          <div></div>
+        </div>
+      </section>
+      <section id="home-mission-section">
+        <h1>MISSION</h1>
+        <h3>
+            To identy and create the best technical solution for your need
+        </h3>
+      </section>
+    </section>
+
+    <section id="my-footer" class="bg-gainsboro-white">
+      <footer>
+        <p>Nov 2020 - Jeffrey Dean profile</p>
+      </footer>
+    </section>
+  </section>
+
+</body>
+</html>

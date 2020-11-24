@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Jeff Dean Profile - Education</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./site.js"></script>
+    <link rel="stylesheet" href="./site.css" asp-append-version="true" />
+</head>
+
+<body class="font-times">
+
+  <div id="myMenu" class="mymenu">
+    <a href='#' class="h3 text-primary closebtn" onclick="home.closeMyMenu()">X</a>
+    <ul>
+      <a class="h3 text-primary" href="./index.html" id="Home">Home</a>
+      <a class="h3 text-primary" href="./experience.html" id="Experience">Experience</a>
+      <a class="h3 text-primary" href="./education.html" id="Education">Education</a>
+      <a class="h3 text-primary" href="./skills.html" id="Skills">Skills</a>
+      <a class="h3 text-primary" href="./projects.html" id="Projects">Projects</a>
+      <a class="h3 text-primary" href="./about.html" id="About">About</a>
+    <ul>
+  </div>
+
+  <section id="myNavBar">
+    <div class="container-fluid">
+      <div>
+        <p class="my-name text-primary text-4vw-size">Jeffrey Dean</p>
+        <p class="my-job-type text-black text-2vw-size">Software Application Developer</p>
+      </div>
+      <div id="myNavBarButton">
+        <button type="button" class="h3" onclick="home.openMyMenu()">☰</button>
+      </div>
+    <div>
+  </section>
+
+  <section id="ed-main" class="bg-black">
+    <section class="text-dark-gray">
+      <p id="ed-title-text">Education</p>
+      <div id="ed-quote">
+        <p id="ed-quote-text" class="text-primary font-italic">
+            "The quality of a person's life is in direct proportion 
+             to their commitment to excellence regardless of their 
+             chosen field of endeavor." -Vincent Lombardi
+        </p>
+      </div>
+    </section>
+
+    <section class="container">
+      <p id="ed-degree-title-text" class="text-dark-gray font-italic">Degrees</p>
+      <div id="ed-degree-tiles" class="row">
+        <div class="col s6">
+          <div id="ed-jh-tile" class="ed-tile">
+            <div id="ed-jh-content" class="ed-tile-content">
+              <p class="ed-tile-label text-gainsboro-white">Master of Science</p>
+              <img class="ed-tile-img" 
+                   src="https://brand.jhu.edu/assets/uploads/sites/5/2016/01/university.logo_.small_.vertical.white_.png"
+                   alt="Johns Hopkins">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">Applied Mathematics</p>
+            </div>
+            <div id="ed-jh-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">Johns Hopkins University</p>
+              <p class="text-white text-center">Sept 1993 – July 1995 (3.9 GPA)</p>
+              <p class="text-gainsboro-white">
+                 I attended part-time at the Whiting School of Engineering campus
+                 while I worked. The curriculum included specialized courses in
+                 Numerical Analysis and Spectral Analysis using computers to solve
+                 complex problems. I continue to enjoy working with a team to find
+                 solutions to complex issues.  Have you ever ordered a Math book on
+                 Amazon because it sounded interesting to you?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div id="ed-wm-tile" class="ed-tile">
+            <div id="ed-wm-content" class="ed-tile-content">
+              <p class="ed-tile-label text-gainsboro-white">Bachelor of Science</p>
+              <img class="ed-tile-img"
+                   src="https://seeklogo.com/images/W/william-and-mary-tribe-logo-DCDA625F14-seeklogo.com.png"
+                   alt="William & Mary">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">Computer Science and Mathematics</p>
+            </div>
+            <div id="ed-wm-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">The College of William and Mary</p>
+              <p class="text-white text-center">Sept 1985 – May 1989 (3.2 GPA)</p>
+              <p class="text-gainsboro-white">
+                 William and Mary is the second oldest school in the nation. I loved
+                 attending in the town of Williamsburg. Academically - it was a very
+                 challenging place to go to school. Everyone was smart. As a liberal
+                 arts college students are immersed in a variety of classes in the
+                 sciences, arts and humanities.  I found that I thrived using my technical
+                 skills in math and computers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ed-class-tiles" class="container">
+      <p id="ed-class-title-text" class="text-dark-gray font-italic">Additional Course Work</p>
+      <div class="row">
+        <div class="col s6">
+          <div id="ed-mongo-tile" class="ed-tile">
+            <div id="ed-mongo-content" class="ed-tile-content">
+                <img class="ed-tile-img" 
+                     src="https://learning.oreilly.com/library/cover/9780133844429/250w/" alt="MongoDB">
+                </img>
+                <p class="ed-tile-label text-gainsboro-white">Home Based Coursework</p>
+                <p class="ed-tile-dates text-gainsboro-white">Summer 2020</p>
+            </div>
+            <div id="ed-mongo-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">Sams teach yourself</p>
+              <p class="text-white text-center">NoSQL with MongoDB in 24 hours </p>
+              <p class="text-white text-center">Summer 2020</p>
+              <p class="text-gainsboro-white">
+                 NoSQL database is extremely popular in web development, data science, 
+                 and information systems.  This technology is backed by a robust community.
+                 It’s easy to use, flexible and efficient.  My expertise also includes
+                 using “CRUD” services in the MongoDB shell, JavaScript and Python.
+                 MongoDB makes it easy to store data in JSON type objects for storage,
+                 retrieval and updating data as needed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div id="ed-htmljscss-tile" class="ed-tile">
+            <div id="ed-htmljscss-content" class="ed-tile-content">
+              <img class="ed-tile-img"
+                   src="https://learning.oreilly.com/library/cover/9780133966299/250w/"
+                   alt="HTML-JS-CSS">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">Home Based Coursework</p>
+              <p class="ed-tile-dates text-gainsboro-white">Spring 2020</p>
+            </div>
+            <div id="ed-htmljscss-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">Programming in HTML5 with JavaScript and CSS3</p>
+              <p class="text-white text-center">Spring 2020</p>
+              <p class="text-gainsboro-white">
+                 This guide was good preparation for Microsoft Exam Ref 70-480 designed
+                 to demonstrate real-world mastery of the covered skills.   I passed this
+                 exam in Feb 2020 with a 836 score (700 was passing score).  I acquired
+                 and demonstrated experience and knowledge to build web applications.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div id="ed-bootstrap-tile" class="ed-tile">
+            <div id="ed-bootstrap-content" class="ed-tile-content">
+              <img class="ed-tile-img"
+                   src="https://v4-alpha.getbootstrap.com/assets/brand/bootstrap-solid.svg"
+                   alt="Bootstrap4">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">Bootstrap4</p>
+              <p class="ed-tile-label text-gainsboro-white">w3schools.com</p>
+              <p class="ed-tile-dates text-gainsboro-white">Fall 2019</p>
+            </div>
+            <div id="ed-bootstrap-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">Bootstrap4</p>
+              <p class="text-white text-center">Fall 2019</p>
+              <p class="text-gainsboro-white">
+                 This tutorial showcased the popular HTML, CSS, and JavaScript front end
+                 framework for developing responsive websites. I can create functional 
+                 websites that are modern, responsive, and mobile.
+              </p>
+            </div>
+         </div>
+        </div>
+        <div class="col s6">
+          <div id="ed-angularjs-tile" class="ed-tile">
+            <div id="ed-angularjs-content" class="ed-tile-content">
+              <img class="ed-tile-img"
+                   src="https://angular.io/assets/images/logos/angular/angular.svg"
+                   alt="AngularJS">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">
+                Angular<span class="text-danger font-bold">JS</span>
+              </p>
+              <p class="ed-tile-label text-gainsboro-white">w3schools.com</p>
+              <p class="ed-tile-dates text-gainsboro-white">Fall 2019</p>
+            </div>
+            <div id="ed-angularjs-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">
+                Angular<span class="text-danger font-bold">JS</span>
+              </p>
+             <p class="text-white text-center">Fall 2019</p>
+              <p class="text-gainsboro-white">
+                 These skills allow me to build web, desktop or mobile applications
+                 using Angular to create dynamic, full-featured, client side applications.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div id="ed-csharp-tile" class="ed-tile">
+            <div id="ed-csharp-content" class="ed-tile-content">
+              <img class="ed-tile-img"
+                   src="https://learning.oreilly.com/library/cover/9781484230183/250w/"
+                   alt="C#7 Programming">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">Home Based Coursework</p>
+              <p class="ed-tile-dates text-gainsboro-white">Fall 2019</p>
+            </div>
+            <div id="ed-csharp-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">Pro C#7 with .NET</p>
+              <p class="text-white text-center">and .NET Core</p>
+              <p class="text-white text-center">(Eighth Edition)</p>
+              <p class="text-white text-center">Fall 2019</p>
+              <p class="text-gainsboro-white">
+                 Top corporations are using the .NET framework in their business technology
+                 because of the proven scalability, reliability and support.  My skills
+                 allow me to design, develop and support web based applications that are
+                 in demand today.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div id="ed-python-tile" class="ed-tile">
+            <div id="ed-python-content" class="ed-tile-content">
+              <img class="ed-tile-img"
+                   src="https://learning.oreilly.com/library/cover/9781449355722/250w/"
+                   alt="Python Programming">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">Home Based Coursework</p>
+              <p class="ed-tile-dates text-gainsboro-white">Summer 2019</p>
+            </div>
+            <div id="ed-python-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">Learning Python</p>
+              <p class="text-white text-center">(Fifth Edition)</p>
+              <p class="text-white text-center">Summer 2019</p>
+              <p class="text-gainsboro-white">
+                 Python is loved by developers, data scientists, and software engineers 
+                 because of its versatility, flexibility and object oriented features.
+                 I created an application for my iPhone to provide storage and notification
+                 of necessary car maintenance tasks. And I created a web application using
+                 Django, a high-level web framework,  to allow a multi-user game environment.
+                 Did you know Python was named after Monty Python?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div id="ed-js-tile" class="ed-tile">
+            <div id="ed-js-content" class="ed-tile-content">
+              <img class="ed-tile-img"
+                   src="https://learning.oreilly.com/library/cover/9781118026694/250w/"
+                   alt="JavaScript Programming">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">Home Based Coursework</p>
+              <p class="ed-tile-dates text-gainsboro-white">Spring 2019</p>
+            </div>
+            <div id="ed-js-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">Professional JavaScript for</p>
+              <p class="text-white text-center">Web Developers</p>
+              <p class="text-white text-center">(Third Edition)</p>
+              <p class="text-white text-center">Spring 2019</p>
+              <p class="text-gainsboro-white">
+                 I learned JavaScript concepts including: object-oriented programming, 
+                 inheritance, and its use in HTML. I can perform client side validation
+                 and interact with many aspects of the browser window. JavaScript is
+                 versatile and a feature of every major web browser.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div id="ed-java-tile" class="ed-tile">
+            <div id="ed-java-content" class="ed-tile-content">
+              <img class="ed-tile-img"
+                   src="http://media.wiley.com/product_data/coverImage/40/04708896/0470889640.jpg"
+                   alt="JAVA Programming">
+              </img>
+              <p class="ed-tile-label text-gainsboro-white">Home Based Coursework</p>
+              <p class="ed-tile-dates text-gainsboro-white">Fall 2018</p>
+            </div>
+            <div id="ed-java-content-hov" class="ed-tile-content">
+              <p class="text-white text-center">Java programming 24-hour trainer</p>
+              <p class="text-white text-center">by Yakov Fain</p>
+              <p class="text-white text-center">Fall 2018</p>
+              <p class="text-gainsboro-white">
+                 I learned Java concepts including: object-oriented programming, 
+                 inheritance, overloading, layouts, event handling, exceptions, 
+                 generics, network programming, and multi threading.  I learned to 
+                 work with Restful Web Services and mapping objects to a database. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="my-footer">
+      <footer>
+        <p class="text-gainsboro-white">Nov 2020 - Jeffrey Dean profile</p>
+      </footer>
+    </section>
+  </section>
+
+</body>
+</html>
