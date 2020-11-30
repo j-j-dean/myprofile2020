@@ -1,13 +1,14 @@
 
 var home = {};
 var ed = {};
+var skills = {};
 
 /******************************************************
 * Function to open the site selection menu            *
 ******************************************************/
 home.openMyMenu = function() {
     $('#home-background-image').css("visibility", "hidden");
-    $('#myMenu').width("100%");
+    $('#myMenu').width("100vw");
 }
 
 /******************************************************
@@ -120,6 +121,25 @@ ed.wmContentHoverOut = function() {
   ed.contentOnOff($('#ed-wm-content-hov'), $('#ed-wm-content'));
 };
 
+/***********************************************************
+* Setup callbacks to handle hovering over sections on the
+* Skills page to display selected content
+************************************************************/
+skills.skillsListHoverIn = function() {
+console.log("Hovering in");
+  $('#skill-text-hov').css("visibility", "visible");
+};
+skills.skillsListHoverOut = function() {
+console.log("Hovering out");
+  $('#skill-text-hov').css("visibility", "hidden");
+};
+skills.toolsListHoverIn = function() {
+  $('#tool-text-hov').css("visibility", "visible");
+};
+skills.toolsListHoverOut = function() {
+  $('#tool-text-hov').css("visibility", "hidden");
+};
+
 
 $(document).ready(function() {
 
@@ -141,6 +161,28 @@ $(document).ready(function() {
     $('#ed-htmljscss-tile').hover(ed.htmljscssContentHoverIn, ed.htmljscssContentHoverOut);
     $('#ed-jh-tile').hover(ed.jhContentHoverIn, ed.jhContentHoverOut);
     $('#ed-wm-tile').hover(ed.wmContentHoverIn, ed.wmContentHoverOut);
+
+    /****************************************************************
+    * Display text box when hovering on skills section on Skills page
+    *****************************************************************/
+    $('#skills-list').hover(skills.skillsListHoverIn, skills.skillsListHoverOut);
+    $('#tools-list').hover(skills.toolsListHoverIn, skills.toolsListHoverOut);
+
+    /*****************************************************************
+    * Display/Hide FDC/CSC testimony on Skills Careers page
+    *****************************************************************/
+    $('#careers-fdc-button').click(function() {
+      $('#careers-fdc-testimony').css("visibility","visible");
+    });
+    $('#careers-fdc-testimony:visible').click(function() {
+      $('#careers-fdc-testimony').css("visibility", "hidden");
+    });
+    $('#careers-csc-button').click(function() {
+      $('#careers-csc-testimony').css("visibility", "visible");
+    });
+    $('#careers-csc-testimony:visible').click(function() {
+      $('#careers-csc-testimony').css("visibility", "hidden");
+    });
 
     window.addEventListener('resize', home.pageResize);
 
