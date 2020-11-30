@@ -93,7 +93,8 @@ li {
   margin: 0;
   padding-right: 4vw;
   padding-top: 1vw;
-  width: 100vw;
+  padding-bottom: 1vw;
+  width: 98vw;
   font-size: 2vw;
   text-align: right;
 }
@@ -102,12 +103,12 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 98vw;
   height: 11vw;
   padding: 0;
   margin: 0;
-  z-index: 1;
   padding-left: 2vw;
+  z-index: 1;
 }
 
 .transparent {
@@ -160,16 +161,16 @@ li {
 
 #home-image {
   position: relative;
-  width: 100vw;
+  width: 100%;
+  height: 50vw;
 }
 
 #home-background-image {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  margin-left: 5vw;
-  margin-right: 5vw;
-  width: 90vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 5vw;
+  width: 95vw;
   transition: 0.5s;
 }
 
@@ -382,36 +383,36 @@ li {
   }
 }
 
-#exp-main, #ed-main {
+#exp-main, #ed-main, #skill-main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   margin-top: 11vw;
 }
 
 #exp-main {
-  height: 163vw;
+  height: 166vw;
 }
 
 #ed-main {
-  height: 280vw;
+  height: 293vw;
 }
 
-#exp-title-text, #ed-title-text {
+#exp-title-text, #ed-title-text, #skill-title-text {
   text-align: center;
   font-size: 15vw;
 }
 
-#exp-quote, #ed-quote {
+.quote {
   position: absolute;
   top: 11vw;
   left: 0;
-  width: 100vw;
+  width: 100%;
 }
 
-#exp-quote-text, #ed-quote-text {
+.quote > p {
   text-align: center;
   font-size: 3.5vw;
   padding-left: 22vw;
@@ -458,13 +459,9 @@ li {
 
 #ed-degree-title-text {
   text-align: center;
-  margin-top: 10vw;
+  margin: 0;
+  margin-top: 14vw;
   font-size: 7vw;
-}
-
-#ed-degree-tiles {
-  margin-top: -5vw;
-  margin-bottom: 0;
 }
 
 #ed-class-title-text {
@@ -534,13 +531,13 @@ li {
 }
 #ed-angularjs-content-hov {
   margin-top: -1vw;
-  margin-left: 1vw;
+  margin-left: 0;
   height: 37vw;
   width: 33vw;
 }
 #ed-bootstrap-content-hov {
   margin-top: -1vw;
-  margin-left: 1vw;
+  margin-left: 0;
   height: 37vw;
   width: 33vw;
 }
@@ -583,7 +580,7 @@ li {
 .exp-tile-img  {
   margin-top: 3vw;
   margin-bottom: 1vw;
-  height: 50%;
+  width: 100%;
 }
 
 .ed-tile-img {
@@ -674,8 +671,8 @@ li {
 
 #careers-student-text-box,
 #careers-stayathome-text-box,
-#careers-fdc-text-box,
-#careers-csc-text-box {
+#careers-fdc-text-box, #careers-fdc-note-box,
+#careers-csc-text-box, #careers-csc-note-box {
   position: absolute;
   top: 0;
   width: 60vw;
@@ -694,6 +691,28 @@ li {
   top: 32vw;
   left: 5vw;
 }
+@keyframes note-animation {
+  0% { opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+#careers-fdc-note-box, #careers-csc-note-box {
+  position: absolute;
+  left: 15vw;
+  top: 5vw;
+  width: 40%;
+  background-color: purple;
+  opacity: 0;
+}
+#careers-csc-note-box {
+  top: 15%;
+  z-index: 2;
+}
+#careers-fdc-note-box:hover,
+#careers-csc-note-box:hover {
+  animation-name: note-animation;
+  animation-duration: 10s;
+}
 #careers-csc-text-box {
   top: 40vw;
   left: 10vw;
@@ -711,6 +730,10 @@ li {
 #careers-fdc-text-box > p:nth-child(2),
 #careers-csc-text-box > p:nth-child(2) {
   margin-bottom: 1.5vw;
+}
+#careers-fdc-note-box > p,
+#careers-csc-note-box > p {
+  font-size: 2.2vw;
 }
 .careers-text-li {
   padding-left: 5vw;
@@ -779,4 +802,92 @@ li {
   top: 85vw;
   left: 5vw;
   width: 90vw;
+}
+#careers-fdc-button, #careers-csc-button {
+  position: absolute;
+  top: 5vw;
+  right: 5vw;
+  border-radius: 8px;
+  color: gainsboro;
+  background-color: purple;
+}
+
+#careers-fdc-testimony, #careers-csc-testimony {
+  position: absolute;
+  top: 15vw;
+  left: 57.5%;
+  width: 85%;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  background-color: gainsboro;
+  z-index: 2;
+  margin: 2vw;
+  border: 1.5px solid black;
+  visibility: hidden;
+}
+#careers-csc-testimony {
+  top: 10vw;
+  left: 15vw;
+}
+#careers-fdc-testimony > img {
+  width: 20vw;
+  margin-left: 30%;
+  margin-bottom: 3vw;
+}
+#careers-csc-testimony > img {
+  width: 40vw;
+  margin-left: 20%;
+  margin-bottom: 3vw;
+}
+
+#skills-list, #tools-list {
+  margin: 0;
+  margin-bottom: 2vw;
+  margin-top: 7vw;
+  padding-bottom: 2.5vw;
+  padding-top: 1.5vw;
+  max-width: 100%;
+  background: blue;
+}
+
+#tools-list {
+  margin-top: -2vw;
+}
+
+.skill-item {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-item-content {
+  margin: 1vw;
+  text-align: center;
+  font-size: 2.3vw;
+  color: white;
+  height: 2vw;
+}
+
+#skill-text-hov, #tool-text-hov {
+  position: absolute;
+  visibility: hidden;
+  z-index: 1;
+  top: 35%;
+  left: 25%;
+  width: 50%;
+  padding: 2vw;
+  font-size: 2.3vw;
+  text-align: center;
+  color: white;
+  background-color: #00d100; // green
+}
+
+#tool-text-hov {
+  top: 78%;
+  left: 15%;
+  width: 70%;
+}
+
+#skill-text-hov > p:first-child,
+#tool-text-hov > p:first-child {
+  font-size: 2.7vw;
 }
